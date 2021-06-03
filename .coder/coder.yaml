@@ -13,8 +13,8 @@ workspace:
         value: 8 
       disk:
         value: 10
-      gpu-count:
-        value: 1
+      # gpu-count:
+        # value: 1
       labels:
         value: 
           com.coder.custom.python.version: "3.8.5"
