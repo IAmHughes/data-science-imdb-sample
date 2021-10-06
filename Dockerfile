@@ -58,10 +58,10 @@ RUN sudo curl -L "https://download.jetbrains.com/product?code=PCC&latest&distrib
 RUN sudo ln -s /opt/pycharm/bin/pycharm.sh /usr/bin/pycharm-community
 
 # Install DataSpell.
-RUN mkdir -p /opt/dataspell
-RUN curl -L "https://download.jetbrains.com/python/jetbrains-data-spell-213.2094.12.tar.gz" | tar -C /opt/dataspell --strip-components 1 -xzvf -
+RUN sudo mkdir -p /opt/dataspell
+RUN sudo curl -L "https://download.jetbrains.com/python/jetbrains-data-spell-213.2094.12.tar.gz" | tar -C /opt/dataspell --strip-components 1 -xzvf -
 # Add a binary to the PATH that points to the dataspell startup script.
-RUN ln -s /opt/dataspell/bin/dataspell.sh /usr/bin/dataspell
+RUN sudo ln -s /opt/dataspell/bin/dataspell.sh /usr/bin/dataspell
 
 
 # Enables Docker starting with systemd
