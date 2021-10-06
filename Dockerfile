@@ -49,7 +49,8 @@ RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-
 ENV PATH $PATH:/home/coder/.poetry/bin
 
 # Globally install jupyter
-RUN sudo pip3 install jupyterlab
+RUN sudo pip3 install jupyter-core==4.7.1 && \
+    sudo pip3 install jupyterlab
 
 # Install pycharm.
 RUN sudo mkdir -p /opt/pycharm
