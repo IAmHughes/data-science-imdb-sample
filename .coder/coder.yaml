@@ -4,7 +4,7 @@ workspace:
   specs:
     kubernetes:
       image:
-        value: index.docker.io/iamhughes/data-science-sample:latest
+        value: index.docker.io/iamhughes/data-science-sample:experiment
       container-based-vm:
         value: false
       cpu:
